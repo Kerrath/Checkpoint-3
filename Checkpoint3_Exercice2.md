@@ -1,7 +1,7 @@
 # Partie 1 : Gestion des utilisateurs
 
 - Q.2.1.1 Sur le serveur, créer un compte pour ton usage personnel.
-![Q2.1.1.png](https://i.ibb.co/1GXDVb9r/Q2-1-1.png)
+![Q2.1.1.png](/Ressource/Q2.1.1.png)
 - Q.2.1.2 Quelles préconisations proposes-tu concernant ce compte ?
 	- Utiliser un mot de passe fort
 	- Ajouter le compte au groupe Sudo
@@ -10,11 +10,11 @@
 # Partie 2 : Configuration de SSH
 
 - Q.2.2.1 Désactiver complètement l'accès à distance de l'utilisateur root.
-![Q2.2.1.png](https://i.ibb.co/FLCSLPzK/Q2-2-1.png)
+![Q2.2.1.png](/Ressource/Q2.2.1.png)
 - Q.2.2.2 Autoriser l'accès à distance à ton compte personnel uniquement.
-![Q2.2.2.png](https://i.ibb.co/fYJCqG59/Q2-2-2.png)
+![Q2.2.2.png](/Ressource/Q2.2.2.png)
 - Q.2.2.3 Mettre en place une authentification par clé valide et désactiver l'authentification par mot de passe
-![Q2.2.3.png](https://i.ibb.co/zT8yHLrK/Q2-2-3.png)
+![Q2.2.3.png](/Ressource/Q2.2.3.png)
 
 # Partie 3 : Analyse du stockage
 
