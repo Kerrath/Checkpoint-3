@@ -1,7 +1,7 @@
 # Partie 1 : Gestion des utilisateurs
 
 - Q.2.1.1 Sur le serveur, créer un compte pour ton usage personnel.
-![Q2.1.1.png]()
+![Q2.1.1.png](https://i.ibb.co/1GXDVb9r/Q2-1-1.png)
 - Q.2.1.2 Quelles préconisations proposes-tu concernant ce compte ?
 	- Utiliser un mot de passe fort
 	- Ajouter le compte au groupe Sudo
@@ -10,11 +10,11 @@
 # Partie 2 : Configuration de SSH
 
 - Q.2.2.1 Désactiver complètement l'accès à distance de l'utilisateur root.
-![[Q2.2.1.png]]
+![Q2.2.1.png](https://i.ibb.co/FLCSLPzK/Q2-2-1.png)
 - Q.2.2.2 Autoriser l'accès à distance à ton compte personnel uniquement.
-![[Q2.2.2.png]]
+![Q2.2.2.png](https://i.ibb.co/fYJCqG59/Q2-2-2.png)
 - Q.2.2.3 Mettre en place une authentification par clé valide et désactiver l'authentification par mot de passe
-![[Q2.2.3.png]]
+![Q2.2.3.png](https://i.ibb.co/zT8yHLrK/Q2-2-3.png)
 
 # Partie 3 : Analyse du stockage
 
@@ -50,23 +50,15 @@
 # Partie 6 : Analyse de logs
 
 - Q.2.6.1 Lister les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun :  La date et l'heure de la tentative.
-
-Dec 20 10:24:08 cp3 sshd[499]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199  user=root
-Dec 21 14:12:30 SRVLX01 login[496]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
-Dec 21 14:39:27 SRVLX01 su: pam_unix(su-l:auth): authentication failure; logname=wilder uid=1000 euid=0 tty=pts/0 ruser=wilder rhost=  user=root
-Jan  3 11:06:28 cp3 sshd[1157]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199  user=root
-Jan  3 11:06:43 cp3 sshd[1161]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199  user=wilder
-Jan  3 11:23:00 cp3 sshd[1227]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199 
-Jan  3 11:23:31 cp3 sshd[1231]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199  user=root
-Jan  3 11:23:45 cp3 sshd[1231]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199  user=root
-Jan  3 12:09:26 cp3 sshd[1587]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=fd26:ba41:c8d6:0:ba92:6393:cc55:8b8d 
-Jan  3 12:09:37 cp3 sshd[1587]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=fd26:ba41:c8d6:0:ba92:6393:cc55:8b8d 
-
-
-
----
-
-https://i.ibb.co/1GXDVb9r/Q2-1-1.png
-https://i.ibb.co/FLCSLPzK/Q2-2-1.png
-https://i.ibb.co/fYJCqG59/Q2-2-2.png
-https://i.ibb.co/zT8yHLrK/Q2-2-3.png
+```
+- Dec 20 10:24:08 cp3 sshd[499]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199  user=root
+- Dec 21 14:12:30 SRVLX01 login[496]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+- Dec 21 14:39:27 SRVLX01 su: pam_unix(su-l:auth): authentication failure; logname=wilder uid=1000 euid=0 tty=pts/0 ruser=wilder rhost=  user=root
+- Jan  3 11:06:28 cp3 sshd[1157]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199  user=root
+- Jan  3 11:06:43 cp3 sshd[1161]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199  user=wilder
+- Jan  3 11:23:00 cp3 sshd[1227]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199 
+- Jan  3 11:23:31 cp3 sshd[1231]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199  user=root
+- Jan  3 11:23:45 cp3 sshd[1231]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.0.199  user=root
+- Jan  3 12:09:26 cp3 sshd[1587]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=fd26:ba41:c8d6:0:ba92:6393:cc55:8b8d 
+- Jan  3 12:09:37 cp3 sshd[1587]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=fd26:ba41:c8d6:0:ba92:6393:cc55:8b8d 
+```
